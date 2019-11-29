@@ -1,0 +1,161 @@
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.movebg {
+    background-size: 1000vw 1000vh;
+    animation: move 5s infinite linear;
+}
+
+@keyframes move {
+    from{
+        background-position: left bottom;
+    }
+    to{
+        background-position: right top;
+    }
+}
+
+/* cardzone */
+
+.design {
+  width: 25rem;
+  padding: 3rem 1.5rem 0 1.5rem;
+  border-radius: 2rem;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.design::after {
+    content:"";
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    display: block;
+    border-radius: 1rem;
+    width: 25rem;
+    height: 93%;
+    z-index:-1
+}
+
+/* side tag */
+
+.design::before {
+    content: "@design by han";
+    padding: 6px 10px 10px 10px;
+    border-radius: 5px 5px 0 0;
+    position: absolute;
+    left: -85px;
+    top: 100px;
+    transform:rotate(-90deg);
+}
+
+/* title */
+
+.design h1 {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-weight:900;
+    font-size:3rem;
+    margin-bottom:0.5rem;
+    padding-bottom: 1rem;
+    /* background: #ccc; */
+}
+
+.design h1 span {
+    text-align: center;
+    letter-spacing: 0.2rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+    width: 12rem;
+    height: 3rem;
+}
+
+
+/* 問題框  */
+
+.design div {
+    position:relative;
+    margin: 0 1rem 0.75rem 1rem;
+    padding-bottom: 0.75rem ;
+}
+
+form p {
+    position:absolute;
+    line-height: 1.5rem;
+    font-size: 0.85rem;
+    font-weight: 200;
+}
+
+form .css p{
+    line-height: 1.5rem;
+}
+
+.design div:nth-child(1) input,
+.design div:nth-child(2) input,
+.design div:nth-child(3) input,
+.design div:nth-child(4) input {
+    display: block;
+    width: 16.5rem;
+    height: 1.5rem;
+    margin-left: 4.5rem;
+    padding:0 1rem;
+    border-radius: 1rem;
+    outline: none;
+    transition: transform 0.1s linear;
+}
+
+.design input[type="file"],
+.design select{
+    padding: 0.5rem;
+    height: 1.5rem;
+}
+
+.design div textarea {
+    height: 10rem;
+    padding: 1rem;
+    display: block;
+    width: 16.5rem;
+    margin-left: 4.5rem;
+    border-radius: 1rem;
+    outline: none;
+    transition: transform 0.1s linear;
+}
+
+/* 預覽按鈕 */
+.design input[type="submit"]{
+    display: block;
+    width: 22rem;
+    height: 2.5rem;
+    margin: 1.5rem auto 3rem auto ;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    transition: transform 0.1s linear;
+    font-weight: bolder;
+}
+
+.design input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+.design input[type="submit"]:focus {
+    border-radius: 1rem;
+    transform: translate(3px,3px);
+}
+

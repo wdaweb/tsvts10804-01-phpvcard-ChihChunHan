@@ -1,0 +1,92 @@
+.bgtext {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    font-size: 32vw;
+    font-weight: 900;
+    transform: skew(-5deg) rotate(5deg);
+}
+
+.design {
+    transform: translate(-50%, -50%) skew(-5deg) rotate(5deg);
+    border-bottom: none;
+}
+
+.design::after {
+    height: 92%;
+}
+
+.design .p_photo{
+    width: 10rem;
+    height: 12rem;
+    margin: 1rem auto 2rem auto;
+    border-radius: 1rem;
+}
+
+.design div {
+    margin: 1rem;
+}
+
+.p_name_job{
+    margin-left: 2rem;
+    padding-left: 1rem;
+    display: block;
+    width: 30%;
+    float: left;
+    height: 2rem;
+    line-height: 1rem;
+}
+
+.p_name_job p:nth-of-type(1) {
+    font-size: 0.7rem;
+    text-align: left;
+    /* margin-left: 1rem; */
+    margin-bottom: 0.4rem;
+}
+.p_name_job p:nth-of-type(2) {
+    font-size: 1rem;
+}
+
+.p_email_phone {
+    margin: 0;
+    width: 50%;
+    float: right;
+    text-align-last: left;
+    font-size: 0.7rem;
+    height: 2rem;
+    line-height: 1.2rem;
+}
+
+.p_email_phone span {
+    display: inline-block;
+    width: 2rem;
+    font-size: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.p_info{
+    clear: both;
+    height: 10rem;
+    text-align-last: left;
+    padding: 1rem;
+}
+
+.p_info p:nth-of-type(1) {
+    font-size: 0.5rem;
+    padding-right: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+button {
+    outline: none;
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    position: absolute;
+    bottom: -12%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+button:hover{
+    cursor: pointer;
+}

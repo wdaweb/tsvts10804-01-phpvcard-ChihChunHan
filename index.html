@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0"> 
+    <title>vCard產生器</title>
+    <!-- reset -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- layout01 -->
+    <link id="css" rel="stylesheet" href="./css/layout01.css">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main movebg">
+        <div class="design">
+            <h1><span>vCard</span>產生器</h1>
+            <!-- form -->
+            <form id="form" action="api.php" method="post" enctype="multipart/form-data">
+                <div class="name">
+                    <p>姓　　名</p><input type="text" name="name" id="" placeholder="請輸入姓名" value="han">
+                </div>
+                <div class="job">
+                    <p>職　　稱</p><input type="text" name="job" id="" value="designer">
+                </div>
+                <div class="phone">
+                    <p>聯絡電話</p><input type="text" name="phone" id="" value="0900123456">
+                </div>
+                <div class="email">
+                    <p>電子信箱</p><input type="email" name="email" id="" value="XXX@XXX.com">
+                </div>
+                <div class="info">
+                    <p>技能簡介</p><textarea name="info" id="" cols="30" rows="10">info...</textarea>
+                </div>
+                <div class="photo">
+                    <p>人像照片</p><input type="file" name="photo" id="">
+                </div>
+                <div class="css">
+                    <p>選擇版型</p>
+                    <select name="css" id="selected">
+                    <option value="css/layout01.css" selected>layout01</option>
+                    <option value="css/layout02.css">layout02</option>
+                    </select>
+                </div>
+                <input type="submit" value="預覽">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

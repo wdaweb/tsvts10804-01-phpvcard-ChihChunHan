@@ -1,0 +1,169 @@
+.main {
+    background: linear-gradient(30deg, rgb(148, 28, 247), rgb(90, 0, 235));
+  }
+
+  .movebg {
+    background-image: linear-gradient(
+        45deg, 
+        rgb(14, 14, 14) 0%,
+        rgb(25, 25, 49) 33.3%,
+        rgb(25, 25, 49) 66.6%, 
+        rgb(14, 14, 14) 100%);
+    background-size: 1000vw 1000vh;
+    animation: move 5s infinite linear;
+}
+
+@keyframes move {
+    from{
+        background-position: left bottom;
+    }
+    to{
+        background-position: right top;
+    }
+}
+
+/* cardzone */
+
+.design {
+    background: #333;
+    border: 1px solid rgb(0, 255, 255);
+    box-shadow: 
+    0px 0px 5rem rgb(0, 255, 255, 0.2), 
+    0px 0px 1rem rgb(0, 255, 255, 0.4);
+}
+
+
+.design::after {
+    background: #333;
+    border: 1px solid #555;
+
+}
+/* side tag */
+
+.design::before {
+    color: #333;
+    background: #0ff;
+    box-shadow: 
+    0px 0px 5px #0ff;
+}
+
+/* title */
+
+.design h1 {
+    color: #666;
+    text-shadow: 
+    1px 1px 0px #0ff,
+    -1px -1px 0px #0ff,
+    1px -1px 0px #0ff,
+    -1px 1px 0px #0ff;
+}
+
+.design h1 span {
+    border-radius: 1rem;
+    border: 1px solid #0ff;
+}
+
+
+
+/* 問題框  */
+
+.design div {
+    border-bottom: 1px solid #eee;
+}
+
+form p {
+    color: #eee;
+}
+
+.design div:nth-child(1) input,
+.design div:nth-child(2) input,
+.design div:nth-child(3) input,
+.design div:nth-child(4) input {
+    border: 1px solid #0ff;
+    background: #333;
+    box-shadow: 0px 0px 7px #111 inset;
+    color: #fff;
+}
+
+.design div textarea {
+    border: 1px solid #0ff;
+    background: #333;
+    box-shadow: 0px 0px 7px #111 inset;
+    color: #fff;
+}
+
+/* 預覽按鈕 */
+.design input[type="submit"]{
+    /* border: 1px solid #0ff; */
+    background: #555;
+    border: 1px solid #999;
+    color: #fff;
+}
+
+.design input[type="submit"]:hover {
+    /* border: 1px solid #0ff; */
+    background: #0ff;
+    border: 1px solid #999;
+    box-shadow: 
+    0px 0px 5rem rgb(0, 255, 255, 0.2), 
+    0px 0px 1rem rgb(0, 255, 255, 0.4);
+    color: #555;
+}
+
+.design input[type="submit"]:focus {
+    transform: none;
+}
+
+/* preview */
+
+.design div {
+    border-bottom: none;
+}
+
+.bgtext {
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.p_photo {
+    border: 1px solid #999;
+}
+
+.p_name_job p:nth-of-type(1) {
+    color:#0ff;
+}
+.p_name_job p:nth-of-type(2) {
+    color: #fff;
+}
+
+.p_email_phone {
+    color: #fff;
+}
+
+.p_email_phone span {
+    color: #0ff;
+}
+
+.p_info{
+    color: #fff;
+}
+
+.p_info p:nth-of-type(1) {
+    color: #0ff;
+}
+
+hr {
+    width: 90%;
+    border-bottom: 1px solid #0ff;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #0ff;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #0ff;
+    color: #555;
+}
